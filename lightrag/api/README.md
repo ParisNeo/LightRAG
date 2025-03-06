@@ -293,6 +293,16 @@ LIGHTRAG_DOC_STATUS_STORAGE=PGDocStatusStorage
 
 You can not change storage implementation selection after you add documents to LightRAG. Data migration from one storage implementation to anthor is not supported yet. For further information please read the sample env file or config.ini file.
 
+## Select the document loading engine
+You can select docling (a little slower but more efficient (default value)
+```
+DOCUMENT_LOADING_ENGINE=DOCLING
+```
+Or select default loading method (uses PyPDF2 for PDF (faster but les efficient)
+```
+DOCUMENT_LOADING_ENGINE=DEFAULT
+```
+
 ### LightRag API Server Comand Line Options
 
 | Parameter | Default | Description |
